@@ -5261,3 +5261,177 @@ th.hide-for-touch {
 
 .touch th.show-for-touch {
   display: table-cell !important; }
+
+.bump {
+  margin-top: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.profile-card {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+  background: #2B2937;
+  overflow: hidden;
+}
+.profile-card h4 {
+  font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 30px;
+  line-height: 26px;
+}
+.profile-card h4 span {
+  font-size: 20px;
+  color: #8C91A7;
+  display: block;
+}
+.profile-card img {
+  border-radius: 50%;
+  border: 4px solid #69708C;
+}
+.profile-card .button-group {
+  width: 101%;
+}
+.profile-card .button-group .button {
+  margin-bottom: 0;
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid #2B2937;
+  border-bottom: none;
+  background-color: #394165;
+  height: 80px;
+  padding-top: 15px;
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 26px;
+  color: #8C91A7;
+  box-shadow: none;
+}
+.profile-card .button-group .button span {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.profile-card p {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #8C91A7;
+}
+.profile-card i {
+  font-size: 26px;
+  vertical-align: middle;
+  padding-right: 5px;
+  color: #394165;
+}
+
+/*------------------------------------
+ timeline styles
+------------------------------------*/
+.path-container {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.path-container .path-item h1 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.path-container .path-item h3 {
+  margin-bottom: 10px;
+  line-height: 1.15;
+}
+.path-container .path-item p {
+  font-size: emCalc(16px);
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+.path-container .path-item a {
+  font-weight: bold;
+  font-size: emCalc(14px);
+}
+.path-container .path-item .circle {
+  background-color: #ccc;
+  background-size: 156px 156px;
+  border-radius: 50%;
+  width: 156px;
+  height: 156px;
+  position: relative;
+  margin-bottom: 180px;
+  z-index: 2;
+}
+.path-container .path-item .circle.circle-left {
+  left: -7px;
+}
+.path-container .path-item .circle.circle-right {
+  right: -10px;
+}
+.path-container .line {
+  background: #ddd;
+  width: 2px;
+  bottom: 0;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  z-index: 0;
+  height: 1164px;
+}
+
+/*------------------------------------
+ medium timeline styles
+------------------------------------*/
+@media only screen and (max-width: 1020px) and (min-width: 767px) {
+  .line {
+    display: none !important;
+  }
+
+  .large-5.columns.path-text {
+    width: 70%;
+    right: 0;
+    margin-left: 15px;
+  }
+
+  .path-item .large-7 {
+    width: 25%;
+  }
+
+  .push-5 {
+    left: 0;
+    float: right;
+  }
+
+  .circle-right {
+    float: left;
+    right: 0px !important;
+  }
+
+  .circle-left {
+    float: right;
+    left: 0px !important;
+  }
+
+
+}
+/*------------------------------------
+ mobile timeline styles
+------------------------------------*/
+@media only screen and (max-width: 767px) {
+  .line {
+    display: none !important;
+  }
+  .path-container {
+    text-align: center;
+  }
+  .path-container .circle {
+    top: 0;
+    right: 0;
+    left: 0;
+    float: none !important;
+    margin-bottom: 30px !important;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
