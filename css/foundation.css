@@ -662,7 +662,7 @@ select {
 
   .push-5 {
     position: relative;
-    left: 41.66667%;
+    /*left: 41.66667%;*/
     right: auto; }
 
   .pull-5 {
@@ -687,7 +687,7 @@ select {
 
   .pull-7 {
     position: relative;
-    right: 58.33333%;
+    /*right: 58.33333%;*/
     left: auto; }
 
   .push-8 {
