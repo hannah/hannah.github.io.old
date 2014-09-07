@@ -1,106 +1,157 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="R1Q_hHu3lEsN082ZIh179qLa6LJ6oX431ycitX23Qdo" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
     <title>Hannah Zabarsky</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/webicons.css">
-    <link rel="stylesheet" href="css/foundation-icons.css" />
-    <script src="js/vendor/modernizr.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
+
   <body>
-  <nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="#">My Site</a></h1>
-    </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
 
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li><a href="#">Right Button Active</a></li>
-      <li><a href="#">Right Button Active</a></li>
-      <li><a href="#">Right Button Active</a></li>
-      <li><a href="#">Right Button Active</a></li>
-
-    </ul>
-
-    <!-- Left Nav Section -->
-    <ul class="left">
-      <li><a href="#">Left Nav Button</a></li>
-    </ul>
-  </section>
-</nav>
-
-    <!-- <div class="large-4 columns">
-      <br>
-        <ul class="small-block-grid-3">
-          <li><a href="http://stackoverflow.com/users/3149902/hzab"><i class="fi-social-stack-overflow"></i></a></li>
-          <li><a href="https://twitter.com/hzabarsky"><i class="fi-social-twitter"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/hannahzabarsky"><i class="fi-social-linkedin"></i></a></li>
-          <li><a href="https://www.facebook.com/hannah.zabarsky"><i class="fi-social-facebook"></i></a></li>
-          <li><a href="https://github.com/hzab"><i class="fi-social-facebook"></i></a></li>
-          <li><a class="webicon tumblr large" href="http://alauncherlife.tumblr.com/">Tumblr</a></li>
-        </ul>
- -->
-  <div class="large-12 columns">
-    <h1 class="center">Projects</h1>
-  </div>
- <ul class="small-block-grid-1 medium-block-grid-2">
-    <li>
-
-      <div class="row large-12 columns">
-        <h3>Breakable Toy: WAYWT</h3>
-        <p>WAYWT is a lookbook website featuring user-submitted outfits by people all over the world. Users can vote on looks to determine what’s popular.
-        </p>
-        <p> I wanted to build something that I found fun. There are several outfit sharing websites with a similar concept, such as Lookbook. I chose something that would be challenging for me, but not impossible to duplicate on the most basic level. My goal was to learn a large amount in a short period of time.
-        </p>
-        <p><a href="http://www.waywt.me">See it online »</a></p>
-        <p><a href="https://github.com/hzab/waywt"> Look at the code »</a></p>
-      </div>
-    </li>
-    <li>
-      <div class="row large-12 columns">
-        <h3>NotBot: IRC bot</h3>
-        <p>I used the ruby gem Cinch to create an Internet Relay Chat chat bot that could interact with other users. I scraped external websites based on user’s matched search queries to Google and Urban Dictionary using Nokogiri.</p>
-        <a href="https://github.com/hzab/bot">Look at the code »</a>
-      </div>
-    </li>
-    <li>
-      <div class="row large-12 columns">
-        <h3>Cookie Clickerer: Javascript Script</h3>
-        <p>I used jQuery selectors in order to manipulate the game ‘Cookie Clicker’. I created a script that would click selectable options and upgrade game play quickly.</p>
-        <p><a href="https://github.com/hzab/cookie_clickerer">Look at the code »</a></p>
-      </div>
-    </li>
-      <li>
-      <div class="row large-12 columns">
-        <h3>Snake</h3>
-        <p>I used jQuery and HTML5 canvas to create a version of the game Snake with Daniel Rubio. </p>
-        <p><a href="/snakepage/snake.html">Play it here »</a></p>
-        <p><a href="https://github.com/drubio1989/SnakeGame">Look at the code »</a></p>
-      </div>
-    </li>
-    </ul>
-      <div class="row">
-        <div class="large-12 columns">
-          <div class="panel">
-          <h4>Want to chat?</h4>
-          <div class="row">
-            <div class="large-9 columns">
-              <p>I'd love to hear from you!</p>
-            </div>
-            <div class="large-3 columns">
-              <a href="mailto:me@hannahzabarsky.com" class="radius button right">Email me</a>
-            </div>
-          </div>
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"></a>
         </div>
+        <div class="navbar-collapse collapse">
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li> -->
+          <!--   <li><a href="#"> "about.html" About</a></li>
+            <li><a href="#"> ="#works"  Works</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
-</body>
 
+
+	<div id="headerwrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+					<h4>HI, MY NAME IS</h4>
+					<h1>HANNAH ZABARSKY</h1>
+					<h4>SOFTWARE DEVELOPER</h4>
+				</div>
+			</div><! --/row -->
+	    </div> <!-- /container -->
+	</div><! --/headerwrap -->
+
+<!-- 	<section id="works"></section>
+	<div class="container">
+		<div class="row centered mt mb">
+            <h2>MY PORTFOLIO</h2>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html"><img src="http://placehold.it/350x350" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html"><img src="http://placehold.it/350x350" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html"><img src="http://placehold.it/350x350" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html"><img src="http://placehold.it/350x350" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html"><img src="http://placehold.it/350x350" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html"><img src="http://placehold.it/350x350" class="img-responsive"></a>
+			</div>
+		</div><! --/row -->
+	</div><! --/container -->
+<!--
+  <section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>CONTACT ME</h2>
+            </div>
+        </div>
+        <div class='row centered'>
+            <button type="button">
+        </div>
+    </div>
+</section> -->
+
+	<div id="social">
+		<div class="container">
+			<div class="row centered">
+				<!-- <div class="col-lg-2">
+					<a href="#"><i class="fa fa-dribbble"></i></a>
+				</div> -->
+				<div class="col-lg-3">
+					<a href="https://www.facebook.com/hannah.zabarsky"><i class="fa fa-facebook"></i></a>
+				</div>
+				<div class="col-lg-3">
+					<a href="https://twitter.com/hzabarsky"><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="col-lg-3">
+					<a href="https://www.linkedin.com/in/hannahzabarsky"><i class="fa fa-linkedin"></i></a>
+				</div>
+				<!-- <div class="col-lg-2">
+					<a href="#"><i class="fa fa-instagram"></i></a>
+				</div> -->
+				<div class="col-lg-3">
+					<a href="http://alauncherlife.tumblr.com/"><i class="fa fa-tumblr"></i></a>
+				</div>
+
+			</div><! --/row -->
+		</div><! --/container -->
+	</div><! --/social -->
+
+
+	<!-- <div id="footerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+					<p><b>WEB DESIGNER, DEVELOPER & GAME ADDICT</b></p>
+				</div>
+
+				<div class="col-lg-4">
+					<p></p>
+				</div>
+				<div class="col-lg-4">
+					<p><a href="mailto:me@hannahzabarsky.com">Email me</a></p>
+				</div>
+			</div>
+		</div>
+	</div><! <--/footerwrap -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
